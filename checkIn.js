@@ -10,8 +10,7 @@ export async function main(event, context, callback) {
     UpdateExpression: "SET checkInTime = :checkInTime",
     ExpressionAttributeValues: {
       ":checkInTime": Date.now()
-    },
-    ReturnValues: "ALL_NEW"
+    }
   };
 
   try {

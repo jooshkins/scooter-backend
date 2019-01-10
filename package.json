@@ -2,6 +2,7 @@
   "name": "scooter-backend",
   "version": "1.0.0",
   "description": "AWS based backend for a scooter share project - Creatures",
+  "private": true,
   "main": "handler.js",
   "scripts": {
     "test": "jest"

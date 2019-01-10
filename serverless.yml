@@ -85,6 +85,15 @@ functions:
           method: get
           cors: true
           private: true
+  
+  logGPS:
+    handler: logGPS.main
+    events:
+      - http:
+          path: logGPS
+          method: put
+          cors: true
+          authorizer: aws_iam
 
 resources:
   - ${file(resources/dynamodb-table.yml)}
