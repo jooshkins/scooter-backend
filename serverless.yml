@@ -94,6 +94,15 @@ functions:
           method: put
           cors: true
           authorizer: aws_iam
+  
+  clearGPS:
+    handler: clearGPS.main
+    events:
+      - http:
+          path: clearGPS
+          method: put
+          cors: true
+          authorizer: aws_iam
 
 resources:
   - ${file(resources/dynamodb-table.yml)}
