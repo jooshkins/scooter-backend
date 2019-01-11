@@ -15,7 +15,8 @@ export async function main(event, context, callback) {
             ":checkOutTime":    Date.now(),
             ":checkInTime":     Date.now() + 1200000,
             ":requestID":   uuid.v1(),
-            ":gps": []
+            ":gps": [],
+            ":gpsArchive": [] 
         }
       };
 

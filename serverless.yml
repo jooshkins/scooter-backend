@@ -90,16 +90,16 @@ functions:
     handler: logGPS.main
     events:
       - http:
-          path: logGPS
+          path: logGPS/{scooterId}
           method: put
           cors: true
           authorizer: aws_iam
   
   clearGPS:
-    handler: clearGPS.main
+    handler: archiveGPS.main
     events:
       - http:
-          path: clearGPS
+          path: archiveGPS/{scooterId}
           method: put
           cors: true
           authorizer: aws_iam
