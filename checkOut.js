@@ -9,7 +9,7 @@ export async function main(event, context, callback) {
         Key: {
           scooterId: event.pathParameters.scooterId,
         },
-        UpdateExpression: "SET userId = :userId, checkOutTime = :checkOutTime, checkInTime = :checkInTime, requestID = :requestID, gps = :gps",
+        UpdateExpression: "SET userId = :userId, checkOutTime = :checkOutTime, checkInTime = :checkInTime, requestID = :requestID, gps = :gps, gpsArchive = :gpsArchive",
         ExpressionAttributeValues: {
             ":userId":  event.requestContext.identity.cognitoIdentityId,
             ":checkOutTime":    Date.now(),

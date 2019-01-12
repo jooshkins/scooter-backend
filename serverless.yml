@@ -95,7 +95,7 @@ functions:
           cors: true
           authorizer: aws_iam
   
-  clearGPS:
+  archiveGPS:
     handler: archiveGPS.main
     events:
       - http:
