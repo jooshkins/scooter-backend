@@ -54,3 +54,9 @@ env.yml
 /mocks
 
 /test
+
+
+unlockScooter.js
+config.js
+
+.vscode

@@ -1,0 +1,7 @@
+const auth = {
+    deviceId: "enter device id found on particle console",
+    token: "enter access token for particle electron"
+}  
+export default {
+    ...auth
+};
